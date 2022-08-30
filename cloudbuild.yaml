@@ -9,7 +9,7 @@ steps:
     - '--project'
     - 'demoneil'
     - '--region'
-    - 'central1'
+    - 'us-central1'
     - '--delivery-pipeline'
     - 'simple-node-app'
     - '--images'
