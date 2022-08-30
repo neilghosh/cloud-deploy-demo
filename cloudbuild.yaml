@@ -1,0 +1,16 @@
+steps:
+  # Deploy container image to Cloud Run
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - 'deploy'
+    - 'releases'
+    - 'create'
+    - 'test-release-$COMMIT_SHA'
+    - 'demoneil'
+    - '--region'
+    - 'central1'
+    - '--delivery-pipeline'
+    - 'simple-node-app'
+    - '--images==my-app-image'
+    - 'gcr.io/demoneil/github.com/neilghosh/simple-54e77cb158f4806852dba395767a'
+ 
