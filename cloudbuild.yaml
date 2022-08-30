@@ -1,5 +1,5 @@
 steps:
-  # Deploy container image to Cloud Run
+  # Create a release
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
     - 'deploy'
