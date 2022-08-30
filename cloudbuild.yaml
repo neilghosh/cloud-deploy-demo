@@ -14,4 +14,5 @@ steps:
     - 'simple-node-app'
     - '--images'
     - 'my-app-image=gcr.io/demoneil/github.com/neilghosh/simple-54e77cb158f4806852dba395767a'
- 
+options:
+  logging: CLOUD_LOGGING_ONLY
