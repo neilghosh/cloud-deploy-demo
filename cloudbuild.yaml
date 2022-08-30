@@ -5,7 +5,7 @@ steps:
     - 'deploy'
     - 'releases'
     - 'create'
-    - 'test-release-$COMMIT_SHA'
+    - 'rel-${SHORT_SHA}'
     - '--project'
     - 'demoneil'
     - '--region'
