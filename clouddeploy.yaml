@@ -1,0 +1,29 @@
+apiVersion: deploy.cloud.google.com/v1
+kind: DeliveryPipeline
+metadata:
+ name: simple-node-app
+description: main application pipeline
+serialPipeline:
+ stages:
+ - targetId: ccd-dev
+   profiles: []
+ - targetId: ccd-prod
+   profiles: []
+---
+
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+ name: ccd-dev
+description: development cluster
+gke:
+ cluster: projects/demoneil/locations/us-central1/clusters/ccd-dev
+---
+
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: ccd-prod
+description: production cluster
+gke:
+  cluster: projects/demoneil/locations/us-central1/clusters/ccd-prod
