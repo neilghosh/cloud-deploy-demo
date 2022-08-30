@@ -6,6 +6,7 @@ steps:
     - 'releases'
     - 'create'
     - 'test-release-$COMMIT_SHA'
+    - '--project'
     - 'demoneil'
     - '--region'
     - 'central1'
