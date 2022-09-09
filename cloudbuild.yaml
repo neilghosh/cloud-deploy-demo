@@ -13,6 +13,6 @@ steps:
     - '--delivery-pipeline'
     - 'simple-node-app'
     - '--images'
-    - 'my-app-image=gcr.io/demoneil/github.com/neilghosh/simple-node-service:pr-2'
+    - 'my-app-image=gcr.io/demoneil/github.com/neilghosh/simple-node-service:5f298d9'
 options:
   logging: CLOUD_LOGGING_ONLY
